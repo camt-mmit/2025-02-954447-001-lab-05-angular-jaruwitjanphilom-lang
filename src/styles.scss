@@ -1,1 +1,128 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: rgb(1, 253, 85);
+  text-decoration: none;
+  border: 1px solid rgb(4, 247, 247);
+  border-radius: 4px;
+}
+a.-st-active {
+  background-color: rgb(247, 0, 95);
+}
+/* You can add global styles to this file, and also import other style files */
+:root {
+  font-family: sans-serif;
+  font-size: 20px;
+  display: block;
+  width: 1500px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background: #c5e5e9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+h3 {
+  text-align: center;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f4f6f8;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 12px;
+
+  border: 1px solid #eb0b0b;
+}
+
+/* row hover */
+tbody tr:hover {
+  background-color: #77b7f8;
+}
+
+/* github links */
+a {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 2px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 50px;
+  color: #a900dd;
+  background-color: #24292f; /* github black */
+}
+
+td a:hover {
+  background-color: #000000;
+}
+/* กำหนดค่าสีเริ่มต้น (Light Mode) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-bg: #f8f9fa;
+  --card-bg: #ffffff;
+}
+
+/* กำหนดค่าสีเมื่อเป็น Dark Mode */
+body.dark-theme {
+  --bg-color: #1e1e1e;       /* สีพื้นหลังมืด */
+  --text-color: #e0e0e0;     /* สีตัวอักษรขาวเทา */
+  --header-bg: #2d2d2d;
+  --card-bg: #333333;
+}
+
+/* นำตัวแปรมาใช้จริง */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; /* ใส่ Effect ให้เปลี่ยนสีนุ่มนวล */
+}
+
+/* ตัวอย่างการแต่ง Dropdown ให้เหมือนในภาพ */
+.theme-switcher {
+  font-family: sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.theme-switcher select {
+  padding: 2px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
